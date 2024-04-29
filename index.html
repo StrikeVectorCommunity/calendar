@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Strike Vector and Strike Vector EX weekly meetups</title>
+        <meta name="robots" content="noindex, nofollow" >
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://cdn.jsdelivr.net/npm/@mmathias01/jstz@3.0.0/dist/jstz.min.js"></script>
+        <style>
+            body, html { width: 100%; height: 100%; margin: 0; padding: 0; }
+            body {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+            }
+            #calendar-iframe {
+                flex-grow: 1;
+                margin: 0;
+                padding: 0;
+                display: block;
+                border-width:0;
+                width:100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="hat">
+            <p>&nbsp;Strike Vector and Strike Vector EX weekly meetups | <a href="http://steamcommunity.com/groups/StrikeVectorMeetups">SVM Steam group</a> | <a href="https://discord.gg/DMK5u3e">SVEX Discord</a></p>
+        </div>
+        <script type="text/javascript">
+          let url = 'https://calendar.google.com/calendar/embed?showTitle=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ittsfjmksj2si03b31cp94k2hs%40group.calendar.google.com&amp;color=%2342104A&amp;src=jrcg29hmbogtl795aeoeh36otg%40group.calendar.google.com&amp;color=%232F6309&amp;src=bi6b3dh0rbrg84vfqjbncbof28%40group.calendar.google.com&amp;color=%238C500B';
+          let iframe_html = `<iframe id="calendar-iframe" src="${url}&amp;ctz=${jstz.determine().name()}" frameborder="0"></iframe>`;
+          document.querySelector('body').insertAdjacentHTML('beforeend', iframe_html);
+        </script>
+    </body>
+</html>
+
+
